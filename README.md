@@ -41,4 +41,14 @@ mysql>
   - `python manage.py inspectdb > mysite/model.py`
   - https://docs.djangoproject.com/en/2.2/ref/settings/#databases
   - https://docs.djangoproject.com/en/3.2/howto/legacy-databases/
+- 出力した model の class Meta を削除する
+  - 削除しないと Migrate ができない
 - `INSTALLED_APPS` に アプリ(pythonモジュール) 追加する
+  - https://docs.djangoproject.com/ja/3.2/intro/tutorial02/#activating-models
+- mirgarion ファイルを作成する
+  - `python manage.py makemigrations polls`
+  - https://docs.djangoproject.com/ja/3.2/intro/tutorial02/#activating-models
+- mirgarion の確認をする
+  - `python manage.py sqlmigrate polls 0001`
+- migration を実行する
+  - `./manage.py migrate`
