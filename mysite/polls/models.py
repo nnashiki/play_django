@@ -11,6 +11,7 @@ from django.db import models
 class Customers(models.Model):
     customernumber = models.IntegerField(db_column='customerNumber', primary_key=True)  # Field name made lowercase.
     customername = models.CharField(db_column='customerName', max_length=50)  # Field name made lowercase.
+    customernickname = models.CharField(db_column='customerNickName', max_length=50, null=True)  # Field name made lowercase.
     contactlastname = models.CharField(db_column='contactLastName', max_length=50)  # Field name made lowercase.
     contactfirstname = models.CharField(db_column='contactFirstName', max_length=50)  # Field name made lowercase.
     phone = models.CharField(max_length=50)

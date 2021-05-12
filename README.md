@@ -52,3 +52,12 @@ mysql>
   - `python manage.py sqlmigrate polls 0001`
 - migration を実行する
   - `./manage.py migrate`
+
+# modelの修正
+- model に変更を加える
+- mirgarion ファイルを作成する
+  - `python manage.py makemigrations polls`
+- mirgarion の確認をする
+  - `python manage.py sqlmigrate polls 0002`
+- migration を実行する
+  - `./manage.py migrate`
