@@ -30,7 +30,15 @@ mysql> show databases;
 mysql> 
 ```
 
+`python manage.py dbshell`
+
 
 # init 
 
 - `django-admin startproject mysite`
+  - https://docs.djangoproject.com/ja/3.2/intro/tutorial01/
+- モデルを table 定義から出力する
+  - `python manage.py inspectdb > mysite/model.py`
+  - https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+  - https://docs.djangoproject.com/en/3.2/howto/legacy-databases/
+- `INSTALLED_APPS` に アプリ(pythonモジュール) 追加する
